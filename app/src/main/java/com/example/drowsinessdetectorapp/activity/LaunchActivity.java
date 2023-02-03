@@ -15,6 +15,7 @@ public class LaunchActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_launch);
         Log.i(TAG,"Created");
     }
@@ -27,7 +28,7 @@ public class LaunchActivity extends AppCompatActivity {
             @Override
             public void run() {
                 Log.i(TAG,"Moving to MainActivity");
-                Intent intent = new Intent(LaunchActivity.this, StartingActivity.class);
+                Intent intent = new Intent(LaunchActivity.this, LoginActivity.class);
                 startActivity(intent);
                 finish();
             }
